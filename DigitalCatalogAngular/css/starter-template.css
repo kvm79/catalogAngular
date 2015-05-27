@@ -1,0 +1,373 @@
+/* FONTS
+-------------------------------------------------- */
+@font-face {
+	font-family: 'Arial Narrow',  Arial, sans-serif; font-stretch: condensed ;
+	src: url('../fonts/ARIALN.eot'); /* IE9 Compat Modes */
+	src: url('../fonts/ARIALN.eot?#iefix') format('embedded-opentype'), 
+	/* IE6-IE8 */  url('../fonts/ARIALN.woff') format('woff'), 
+	/* IE6-IE8 */  url('http://ec2-50-18-9-93.us-west-1.compute.amazonaws.com/ltrisolini/DC/fonts/ARIALN.woff') format('woff'), 
+	/* Modern Browsers */  url('../fonts/ARIALN.ttf') format('truetype'), 
+	/* Modern Browsers */  url('http://ec2-50-18-9-93.us-west-1.compute.amazonaws.com/ltrisolini/DC/fonts/ARIALN.ttf') format('truetype'), 
+	/* Safari, Android, iOS */  url('../fonts/ARIALN.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
+{ } 
+/* HEADER/LOGO
+-------------------------------------------------- */
+
+/* Space out content a bit */
+body {
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+/* Custom page header */
+.header {
+	border-bottom: 1px solid #e1e1e1;
+	border-top: 1px solid #e1e1e1;
+	padding-right: 30px;
+	padding-left: 30px;
+	margin-bottom: 25px;
+}
+/* Make the masthead heading the same height as the navigation */
+h1.masthead {
+	margin-top: 0;
+	margin-bottom: 24px;
+	line-height: 40px;
+	text-align: center;
+}
+.sup {text-transform: uppercase;}
+
+/* NAVIGATION
+-------------------------------------------------- */
+.nav>li>a {
+	color: #787878;
+	text-transform: uppercase;
+	padding: 15px;
+	font-family: Helvetica, Arial, sans-serif;
+	font-weight: bold;
+	font-size: 12px;
+}
+.nav>li>a:hover, .nav>li>a:focus {
+	border-bottom: 4px solid #f6512b;
+	padding-bottom: 11px;
+	outline:none;
+}
+.nav-pills > li.active > a, .nav-pills > li.active > a:hover, .nav-pills > li.active > a:focus {border-bottom: 4px solid #f6512b; background-color:#eee; padding-bottom: 11px; color:#787878;}
+.nav-pills>li>a {
+	border-radius: 0;
+}
+.nav-pills > li + li {
+	margin-left: 0px;
+}
+/* SOCIAL MEDIA
+-------------------------------------------------- */
+ul.social-icons {
+	list-style: none;
+	overflow: visible;
+	height: auto;
+	max-height: 340px;
+	padding-right: 15px;
+	padding-left: 15px;
+}
+ul.slide-zoom {
+	list-style: none;
+}
+ul.social-icons li {
+	width: 38px;
+	height: 30px;
+	padding: 9px 0 0;
+	float: left;
+}
+ul.slide-zoom li {
+	float: left;
+	background: #333;
+	color: #fff;
+	padding: 8px;
+	width: 50px;
+	height: 38px;
+	font-size: 16px;
+	text-align: center;
+	margin-left: 10px;
+}
+ul.social-icons li a, ul.slide-zoom li a {
+	width: 30px;
+	height: 30px;
+	display: block;
+	background: url('../images/sprites2.png') no-repeat;
+}
+ul.social-icons li a.facebook {
+	background-position: -121px -24px;
+}
+ul.social-icons li a.facebook:hover {
+	background-position: -91px -24px;
+}
+ul.social-icons li a.twitter {
+	background-position: -121px -54px;
+}
+ul.social-icons li a.twitter:hover {
+	background-position: -91px -54px;
+}
+ul.social-icons li a.pinterest {
+	background-position: -121px -84px;
+}
+ul.social-icons li a.pinterest:hover {
+	background-position: -91px -84px;
+}
+ul.slide-zoom li a.zoom {
+	background-position: -4px -89px;
+}
+ul.slide-zoom li a.zoom:hover {
+	background-position: -4px -89px;
+	opacity: 0.9;
+	outline: 0 none;
+}
+/* CUSTOMIZE THE CAROUSEL
+-------------------------------------------------- */
+
+/* Carousel base class */
+.carousel, .sub-page {
+	height: 100%;
+	margin-bottom: 13px;
+	border: 1px solid #e5e5e5;
+}
+
+.sub-page {padding:50px;}
+
+/* Since positioning the image, we need to help out the caption */
+.carousel-caption {
+	z-index: 10;
+}
+/* Declare heights because of positioning of img element */
+/*
+.carousel .item {
+	height: 100%;
+	background-color: #fff;
+	padding: 0;
+	margin: 0;
+}
+.carousel-inner > .item > img {
+	position: absolute;
+	top: 0;
+	left: 0;
+	min-width: 110%;
+	height: 100%;
+}
+.carousel-inner > .item > .container {
+	margin: 0 auto;
+	max-width: 815px;
+	padding: 0;
+}
+*/
+.carousel-control.left, .carousel-control.right {
+	width: 42px;
+	height: 81px;
+	display: block;
+	background: url('../images/sprites2.png') no-repeat;
+	background-repeat: none;
+}
+.carousel-control.right {
+	background-position: -38px 0px;
+}
+.carousel-indicators {
+	top: 104%;
+}
+.carousel-indicators li {
+	background-color: #ccc;
+	border: none;
+	width: 13px;
+	height: 13px;
+	margin: 0 8px 0 0;
+}
+.carousel-indicators .active {
+	background-color: #333;
+	width: 13px;
+	height: 13px;
+	margin: 0 8px 0 0;
+}
+.carousel-caption {
+	color: #444;
+}
+.carousel-control {
+	text-shadow: none;
+	opacity: 1;
+	top: 225px;
+}
+.container-narrow > hr {
+	margin: 30px 0;
+}
+.carousel-caption p {
+	margin-bottom: 20px;
+	font-size: 21px;
+	line-height: 1.4;
+}
+
+/* CUSTOM, IPHONE RETINA
+-------------------------------------------------- */
+@media (min-width : 319px) {
+.container {
+	/*border:1px solid orange;*/
+	width: 100%;
+	padding: 0;
+	margin: 0;
+}
+ul.nav {
+	margin: 0;
+	padding: 0;
+	display: table;
+	width: 100%;
+}
+.nav > li {
+	padding: 0;
+	margin: 0;
+	display: table-cell;
+}
+.header {
+	padding-left: 0;
+	padding-right: 0;
+}
+.nav-pills > li {
+	float: none;
+	text-align: center;
+}
+.nav-pills > li+li {
+	margin-left: 0;
+}
+.carousel {
+	/*margin-bottom: 50px;*/
+}
+ul.slide-zoom > li {
+	float: left;
+	margin-left: 10px;
+}
+
+.carousel-control.left, .carousel-control.right {
+	width: 32px;
+	height: 70px;
+	display: block;
+	background: url('../images/sprites2.png') no-repeat;
+	background-repeat: none;
+}
+
+.carousel-control.right {
+	background-position: -44px -5px;
+}
+
+.carousel-control.left {
+	background-position: -5px -5px;
+}
+
+}
+
+/* EXTRA SMALL DEVICES, PHONES
+-------------------------------------------------- */
+@media (min-width : 480px) {
+.container {
+	/*border:1px solid red;*/
+	width: 100%;
+	padding: 0;
+	margin: 0;
+}
+ul.nav {
+	margin: 0;
+	padding: 0;
+	display: table;
+	width: 100%;
+}
+.nav > li {
+	padding: 0;
+	margin: 0;
+	display: table-cell;
+}
+.header {
+	padding-left: 0;
+	padding-right: 0;
+}
+.nav-pills > li {
+	float: none;
+	text-align: center;
+}
+.nav-pills > li+li {
+	margin-left: 0;
+}
+ul.slide-zoom > li {
+	float: left;
+	margin-left: 10px;
+}
+
+.carousel-control.left, .carousel-control.right {
+	width: 42px;
+	height: 81px;
+	display: block;
+	background: url('../images/sprites2.png') no-repeat;
+	background-repeat: none;
+}
+.carousel-control.right {
+	background-position: -38px 0px;
+}
+}
+
+/* SMALL DEVICES, TABLETS
+-------------------------------------------------- */
+@media (min-width : 768px) {
+.container {
+	/*border:1px solid blue;*/
+	width: 640px;
+	margin: 0 auto;
+}
+.header {
+	padding-right: 0px;
+	padding-left: 0px;
+}
+ul.nav {
+	margin: 0;
+	padding: 0;
+	display: table;
+	width: 100%;
+}
+.nav > li {
+	padding: 0;
+	margin: 0;
+	display: table-cell;
+}
+.nav-pills > li {
+	float: none;
+	text-align: center;
+}
+.nav-pills > li+li {
+	margin-left: 0;
+}
+ul.slide-zoom > li {
+	float: left;
+	margin-left: 10px;
+}
+}
+
+/* MEDIUM DEVICES, DESKTOPS
+-------------------------------------------------- */
+@media (min-width : 992px) {
+.container {
+	/*border:1px solid yellow;*/
+	width: 960px;
+	margin: 0 auto;
+}
+ul.social-icons {
+	display: block !important;
+}
+.nav > li {
+	padding: 0 10px;
+	display: block;
+}
+.nav > li > a {
+	padding: 15px;
+}
+.nav-pills > li {
+	float: left;
+}
+ul.nav {
+	display: block;
+	width: auto;
+}
+ul.slide-zoom > li {
+	float: left;
+	margin-left: 10px;
+}
+}

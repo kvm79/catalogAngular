@@ -1,0 +1,15 @@
+<!--TOOLTIP CONTAINER -->
+<div class="jumbotron tooltip-jumbotron clearfix" ng-style="{ 'background-image': 'url(' + slide.img + ')' }">
+  <section class="tooltip-copy">
+    <h2 class="tooltip-h2" ng-bind-html="slide.headline"></h2>
+    <a href="{{slide.url}}"><span class="glyphicon glyphicon-play small"></span> <span ng-bind-html="slide.textLink"></span></a>
+  </section>
+  <div id="tooltip">
+    <button id="pop01" type="button" class="btn-sm btn-warning" popover-placement="right" popover="{{slide.bullet1}}"><div class="popicon"></div></button>
+    <button id="pop02" type="button" class="btn-sm btn-warning" popover-placement="left" popover="{{slide.bullet2}}"><div class="popicon"></div></button>
+    <button id="pop03" type="button" class="btn-sm btn-warning" popover-placement="top" popover="{{slide.bullet3}}"><div class="popicon"></div></button>
+  </div>
+</div>
+<!--/TOOLTIP CONTAINER -->
+
+

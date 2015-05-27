@@ -1,0 +1,22 @@
+<!-- FIRST SLIDE CONTAINER -->
+<div class="slideone">
+    <!--span class="areactive"></span-->
+    <div ng-mouseover="mouseOver()" ng-mouseout="mouseOut()">
+        <span ng-hide="hoverImg">
+            <img class="img-responsive" ng-src="{{slide.imgOn}}" />
+        </span>
+        <span ng-show="hoverImg">
+            <img class="img-responsive" ng-src="{{slide.imgHover}}" />
+        </span>
+    </div>
+        
+    <div class="carousel-caption jumbotron baknone clearfix">      
+        <div class="slideonetitlepos">
+        <div class="slideone-copy">
+            <h2 class="slideone-h2" ng-bind-html="slide.headline"></h2>
+            <a href="{{slide.url}}"><span class="glyphicon glyphicon-play small"></span> <span ng-bind-html="slide.textLink"></span></a>
+        </div>            
+        </div>    
+     </div> 
+</div>         
+<!-- /FIRST SLIDE CONTAINER -->

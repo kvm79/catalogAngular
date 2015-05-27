@@ -1,0 +1,20 @@
+<!--VIDEO CONTAINER -->
+<div class="jumbotron video-jumbotron clearfix" ng-style="{ 'background-image': 'url(' + slide.img + ')' }">
+    <section class="video-copy">
+          <h2 class="video-h2">
+          	  <span ng-bind-html="slide.headline"></span>
+              <br />
+              <span class="video-subtext" ng-bind-html="slide.snippet"></span>
+          </h2>
+          <video id="example_video_1" class="video-js vjs-default-skin videoScreen" controls preload="none" poster="{{slide.videoDefault}}"
+              data-setup="{}">
+                <source ng-src="{{slide.videoMP4 | trusted}}" type='video/mp4' />
+                <source ng-src="{{slide.videoWebM | trusted}}" type='video/webm' />
+                <source ng-src="{{slide.videoOgv | trusted}}" type='video/ogg' />
+          </video>
+          
+          <a href="{{slide.url}}" class="btn btn-large sup" ng-bind-html="slide.textLink"></a>
+                                        
+      </section>
+</div>
+<!--/VIDEO CONTAINER -->

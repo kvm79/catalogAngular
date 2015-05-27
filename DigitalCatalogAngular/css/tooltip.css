@@ -1,0 +1,243 @@
+/* Tooltip Slide CSS */
+.tooltip-jumbotron {
+	max-width: 992px;
+	margin: auto;
+	/*background: #ffffff url(../images/tooltip-jumbotron.jpg) no-repeat right bottom;*/
+	background-position: right bottom;
+	background-repeat: no-repeat;
+	background-color: #fff;
+	overflow: hidden;
+	position: relative;
+	padding: 10px;
+}
+.tooltip-jumbotron h2 {
+	width: 450px;
+	font-family: 'Arial Narrow', Arial, Heveltica, sans-serif;
+	color: #333333;
+	font-size: 44px;
+	line-height: 50px;
+	text-transform: uppercase;
+	font-weight:100;
+}
+.tooltip-copy a {
+	color: #333333;
+	font-size: 15px;
+	font-style: italic;
+	display: block;
+	padding: 10px 0 0 0;
+}
+.tooltip-copy a:hover {
+	text-decoration:none;
+	font-style: normal;
+	color: #f0ad4e;
+}
+
+/* Tooltip - This is the Tooltip Plus Button Section */
+#tooltip {
+	width: 480px;
+	height: 180px;
+	display: block;
+	position: absolute;
+	bottom: 175px;
+	right: 135px;
+}
+#tooltip .btn-warning {
+	height: 25px;
+	width: 25px;
+	line-height: 25px;
+	overflow: hidden;
+	background-color: #f6512b;
+	color: #333333;
+	font-size: 15px;
+	font-style: italic;
+	display: block;
+	padding: 15px 0 0 0;
+}
+#tooltip .btn-warning:before {
+	content: "";
+	border-left: 1px solid #ffffff;
+	height: 17px;
+	position: absolute;
+	left: 49%;
+	top: 5px;
+	padding: 0;
+}
+#tooltip .btn-warning:hover {
+	background-color: #f0ad4e;
+}
+#tooltip .btn-warning:active:before, #tooltip .btn-warning:hover:before{
+	content: "";
+	border: 0;
+}
+#tooltip .popicon {
+	border-top: 1px solid #ffffff;
+	height: 1px;
+	width: 17px;
+	margin: -7px auto 0 auto;
+	padding: 0;
+}
+#tooltip #pop01 {
+	position: relative;
+	clear: both;
+}
+#tooltip #pop02 {
+	position: relative;
+	float: right;
+	top: 20%;
+	clear: both;
+}
+#tooltip #pop03 {
+	position: relative;
+	margin: auto;
+	top: 60%;
+	clear: both;
+}
+
+.popover-content {
+	padding: 30px 20px 30px 20px;
+	font-family:Arial, Helvetica, sans-serif;
+    font-size: 15px;
+	line-height: 18px;
+	color: #333333;
+}
+.popover {
+	background: rgb(255, 255, 255); /* The Fallback */
+	background: rgba(255, 255, 255, 0.9); 
+}
+.popover.right > .arrow:after{
+	border-right-color: rgb(255, 255, 255); 
+	border-right-color: rgba(255, 255, 255, 0.9);
+}
+.popover.left > .arrow:after{
+	border-left-color: rgb(255, 255, 255); 
+	border-left-color: rgba(255, 255, 255, 0.9); 
+}
+.popover.top > .arrow:after{
+	border-top-color: rgb(255, 255, 255); 
+	border-top-color: rgba(255, 255, 255, 0.9); 
+}
+.popover.bottom > .arrow:after{
+	border-bottom-color: rgb(255, 255, 255); 
+	border-bottom-color: rgba(255, 255, 255, 0.9); 
+}
+
+button {outline:none; border:none;}
+
+/* Tooltip Responsive CSS */
+@media (max-width: 320px) {
+	.tooltip-jumbotron {
+	height: 200px;
+	/*background: #ffffff url(../images/tooltip-jumbotron.jpg) no-repeat;*/
+	background-repeat: no-repeat;
+	background-position:  50% 130%;
+	background-color: #fff;
+	background-size: 70%;
+	padding: 0 15px 0 15px;
+  }
+  .tooltip-jumbotron h2 {
+	width: 100%;
+	text-align: center;
+	font-size: 16px;
+	line-height: 16px;
+	margin-bottom: 5px;
+	font-weight:bold;
+  }
+ .tooltip-copy a {
+	text-align:center;
+	font-size: 15px;
+	padding: 0;
+}
+  #tooltip {
+	display:none;
+ }
+}
+@media (max-width: 480px) and (min-width: 321px) {
+  .tooltip-jumbotron {
+	height: 200px;
+	/*background: #ffffff url(../images/tooltip-jumbotron.jpg) no-repeat;*/
+	background-repeat: no-repeat;
+	background-position:  50% 60px;
+	background-color: #fff;
+	background-size: 70%;
+	padding: 0 15px 0 15px;
+  }
+  .tooltip-jumbotron h2 {
+	width: 100%;
+	text-align: center;
+	font-size: 16px;
+	line-height: 16px;
+	margin-bottom: 5px;
+	font-weight:bold;
+  }
+ .tooltip-copy a {
+	text-align:center;
+	font-size: 15px;
+	padding: 0;
+}
+  #tooltip {
+	display:none;
+ }
+}
+@media (max-width: 767px) and (min-width: 481px) {
+   .tooltip-jumbotron {
+	height: 398px;
+	/*background: #ffffff url(../images/tooltip-jumbotron.jpg) no-repeat;*/
+	background-repeat: no-repeat;
+	background-position:  50% 150%;
+	background-color: #fff;
+	background-size: 505px;
+	padding: 10px 30px 0px 30px;
+  }
+ .tooltip-jumbotron h2 {
+	width: 100%;
+	font-size: 33px;
+	line-height: 30px;
+  }
+  .tooltip-copy a {
+	padding: 2px 0 0 0;
+}
+ #tooltip {
+	width: 340px;
+	height: 130px;
+	position: absolute;
+	margin: auto;
+	bottom: 0;
+	top: 100px;
+	left: 0;
+	right: 0;
+}
+}
+@media (max-width: 991px) and (min-width: 768px) {
+  .tooltip-jumbotron {
+	height: 398px;
+	/*background: #ffffff url(../images/tooltip-jumbotron.jpg) no-repeat;*/
+	background-repeat: no-repeat;
+	background-position:  50% 150%;
+	background-color: #fff;
+	background-size: 505px;
+	padding: 10px 30px 0px 30px;
+  }
+ .tooltip-jumbotron h2 {
+	width: 100%;
+	font-size: 33px;
+	line-height: 30px;
+  }
+  .tooltip-copy a {
+	padding: 2px 0 0 0;
+}
+ #tooltip {
+	width: 340px;
+	height: 130px;
+	position: absolute;
+	margin: auto;
+	bottom: 0;
+	top: 100px;
+	left: 0;
+	right: 0;
+}
+}
+@media (min-width: 992px) {
+	.tooltip-copy { padding:0 0 0 50px; } /* edited  */
+	.tooltip-jumbotron { height: 598px; padding-left: 0px !important; padding-right: 0px !important;
+}
+}

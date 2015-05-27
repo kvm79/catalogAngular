@@ -1,0 +1,188 @@
+/* Scrollup Slide CSS */
+.scrollup-jumbotron {
+	max-width: 800px;
+	margin: auto;
+	overflow: hidden;
+	position: relative;
+	padding: 0 !important;
+	background-color: #ffffff;
+}
+.scrollup-copy {
+	position: absolute;
+	z-index: 10;
+	left: 50%;
+	margin-left: -275px;
+	width: 550px;
+	margin-top: 20px;
+    display: table;
+	text-align: center;
+	vertical-align: middle;
+}
+.scrollup-copy:before, .scrollup-copy:after { 
+	content: ''; 
+	background: transparent url(../images/scrollup-sprites.png) no-repeat; 
+    width: 36px;
+    height: 153px;
+    display: table-cell;
+	vertical-align: middle;
+}
+.scrollup-copy:before { 
+    background-position: 0 0;
+}
+.scrollup-copy:after { 
+    background-position: -36px 0;
+}
+.scrollup-h2 {
+	font-family: 'Arial Narrow', Arial, Heveltica, sans-serif;
+	color: #ed1c24;
+	font-size: 47px;
+	line-height: 47px;
+	text-transform: uppercase;
+	text-align: center;
+	font-weight: 100;
+	padding: 0;
+	width: 460px;
+	margin: 25px auto 0 auto;
+}
+
+/* Scrollup - This is the Section that scrolls up */
+#scrollup {
+	position: absolute;
+	top: 150px;
+	margin: 0 auto;
+	width: 100%;
+	height: 100%;
+	background-position: center 0px;
+	background-repeat: no-repeat;
+    transition: 1s;
+}
+.scrollup-jumbotron:hover #scrollup {
+	transition: 1s;
+    top: 40px;
+}
+#scrollup .cta-scrollup {
+	position: absolute;
+	bottom: 80px;
+	left: 50%;
+	margin-left: -100px;
+	display: block;
+	width: 200px;
+	height: 45px;
+	line-height: 45px;
+	color: #ffffff;
+	font-weight:bold;
+	background-color: #333333;
+	padding: 0px;
+	border-radius: 0px;
+}
+#scrollup .cta-scrollup:hover {
+	background-color: #ed1c24;
+}
+button {outline:none; border:none;}
+
+/* Scrollup Responsive CSS */
+@media (max-width: 320px) {
+.scrollup-jumbotron {
+	height: 200px;
+}
+#scrollup {
+	background-size: 100%;
+	top: 15px;
+}
+.scrollup-jumbotron:hover #scrollup {
+    top: 15px;
+}
+.scrollup-copy {
+	left: 50%;
+	margin-left: -124px;
+	width: 248px;
+	margin-top: 8px;
+}
+.scrollup-copy:before, .scrollup-copy:after { 
+    width: 16px;
+    height: 68px;
+	background-size: 32px;
+}
+.scrollup-copy:after { 
+    background-position: -16px 0;
+}
+.scrollup-h2 {
+	font-size: 23px;
+	line-height: 23px;
+	width: 215px;
+	margin: 10px auto 0 auto;
+}
+#scrollup .cta-scrollup {
+	bottom: 35px;
+	left: 50%;
+	margin-left: -70px;
+	display: block;
+	width: 140px;
+	height: 32px;
+	line-height: 32px;
+	font-size: 11px;
+}
+}
+@media (max-width: 480px) and (min-width: 321px) {
+.scrollup-jumbotron {
+	height: 200px;
+}
+#scrollup {
+	background-size: 80%;
+	top: 15px;
+}
+.scrollup-jumbotron:hover #scrollup {
+    top: 15px;
+}
+.scrollup-copy {
+	left: 50%;
+	margin-left: -155px;
+	width: 310px;
+	margin-top: 8px;
+}
+.scrollup-copy:before, .scrollup-copy:after { 
+    width: 16px;
+    height: 68px;
+	background-size: 32px;
+}
+.scrollup-copy:after { 
+    background-position: -16px 0;
+}
+.scrollup-h2 {
+	font-size: 26px;
+	line-height: 26px;
+	width: 278px;
+	margin: 10px auto 0 auto;
+}
+#scrollup .cta-scrollup {
+	bottom: 35px;
+	left: 50%;
+	margin-left: -70px;
+	display: block;
+	width: 140px;
+	height: 32px;
+	line-height: 32px;
+	font-size: 11px;
+}
+}
+@media (max-width: 767px) and (min-width: 481px) {
+.scrollup-jumbotron {
+	height: 398px;
+}
+#scrollup {
+	background-size: 515px;
+}
+}
+@media (max-width: 991px) and (min-width: 768px) {
+.scrollup-jumbotron {
+	height: 398px;
+}
+#scrollup {
+	background-size: 515px;
+}
+}
+@media (min-width: 992px) {
+  .scrollup-jumbotron {
+	height: 598px;
+  }
+}

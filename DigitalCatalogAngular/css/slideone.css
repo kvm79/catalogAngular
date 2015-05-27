@@ -1,0 +1,321 @@
+/* Tooltip Slide CSS */
+.one { display: block; }
+.two { display: none; }
+.fl { float:left; }
+.carousel-control {top: 45% !important}
+.slideone:{ min-height: 537px !important; }
+.abs { position:absolute; }
+.areactive{ position:absolute;left:63%; width:60%; height:100%; z-index:11;  }
+
+.areactive:hover 
+{
+    display: block;
+}
+
+
+.img-responsive {
+	 z-index: 5; 
+	
+}
+
+
+.top-10{ margin-top: -10px;}
+.top-50{ margin-top: -50px;}
+
+.baknone{ background: none !important}
+.jumbotron h1{ font-size:36px}
+.carousel-caption {
+	font-family:  Arial, Heveltica, sans-serif;
+	padding-top:100px;
+    color: #333333;
+    top: 0;
+    bottom: 0;
+	right:28%;
+	left:0;
+	margin:0;
+    text-shadow: none;
+    z-index: 10 ;
+}
+
+.z100 {
+	 z-index: 100 !important;
+}
+.carousel-control.left, .carousel-control.right {
+	z-index: 200;
+}
+
+.carousel-caption a {
+	
+	color: #333333;
+	text-decoration:none; 
+	font-style:italic;
+	font-weight:normal;
+}
+
+.carousel-caption a:hover {
+	color: #f6512b;
+	text-decoration:none; 
+	font-style:italic;
+	font-weight:bold;
+}
+
+
+
+.slideonetitlepos{ top: -5%; left:auto; right:auto}
+
+
+.slideone-h2 {
+	font-family: 'Arial Narrow', Arial, Heveltica, sans-serif;
+	color: #333333;
+	font-size: 45px;
+	line-height: 45px;
+	text-align: center;
+	text-transform:uppercase;
+	font-weight: 100;
+	padding: 0;
+	width: 350px;
+	margin: 0 auto 10px auto;
+	
+}
+
+
+
+/* slideone Slide CSS */
+.slideone {
+	max-width: 800px;
+	margin: auto;
+	overflow: hidden;
+	position: relative;
+	padding: 0 !important;
+	background-color: #ffffff;
+	
+}
+.slideone-copy {
+	position: absolute;
+	z-index: 10;
+	left: 50%;
+	margin-left: -275px;
+	width: 430px;
+	margin-top: 20px;
+    display: table;
+	text-align: center;
+	vertical-align: middle;
+}
+.slideone-copy:before, .slideone-copy:after { 
+	content: ''; 
+	background: transparent url(../images/slideone-sprites2.png) no-repeat; 
+	background-repeat:no-repeat;
+    width: 72px;
+    height: 153px;
+    display: table-cell;
+	vertical-align: middle;
+}
+.slideone-copy:before { 
+    background-position: 0 0;
+}
+.slideone-copy:after { 
+    background-position: -36px 0;
+}
+
+
+/* slideone - This is the Section that scrolls up */
+#slideone {
+	position: absolute;
+	top: 150px;
+	margin: 0 auto;
+	width: 100%;
+	height: 100%;
+	/*background: #ffffff url(../images/slideone-jumbotron.jpg) no-repeat center 0px;*/
+    transition: 1s;
+}
+.slideone:hover #slideone {
+	transition: 1s;
+    top: 40px;
+}
+#slideone .cta-slideone {
+	position: absolute;
+	bottom: 80px;
+	left: 50%;
+	margin-left: -100px;
+	display: block;
+	width: 200px;
+	height: 45px;
+	line-height: 45px;
+	color: #ffffff;
+	font-weight:bold;
+	background-color: #333333;
+	padding: 0px;
+	border-radius: 0px;
+}
+#slideone .cta-slideone:hover {
+	background-color: #ed1c24;
+}
+button {outline:none; border:none;}
+
+/* slideone Responsive CSS */
+@media (max-width: 320px) {
+.slideone {
+	height: 200px;
+}
+#slideone {
+	background-size: 100%;
+	top: 15px;
+}
+.slideone:hover #slideone {
+    top: 15px;
+}
+
+.slideone-copy:before, .slideone-copy:after { 
+    width: 16px;
+    height: 68px;
+	background-size: 32px;
+	
+}
+
+.slideone-copy:after { 
+    background-position: -16px 0;
+}
+.slideone-h2 {
+	font-family: 'Arial Narrow', Arial, Heveltica, sans-serif;
+	font-size: 17px;
+	line-height: 18px;
+	width: 130px;
+	margin-top:5px;
+	
+	
+}
+.slideone-copy {
+	
+	margin-left: -80px;
+	width: 160px;
+	margin-top: -50px;
+}
+#slideone .cta-slideone {
+	
+	left: 50%;
+	margin-left: -70px;
+	display: block;
+	width: 140px;
+	height: 32px;
+	line-height: 32px;
+	font-size: 11px;
+}
+}
+@media (max-width: 480px) and (min-width: 321px) {
+.slideone {
+	height: 200px;
+}
+#slideone {
+	background-size: 80%;
+	top: 15px;
+}
+.slideone:hover #slideone {
+    top: 15px;
+}
+
+.slideone-copy:before, .slideone-copy:after { 
+    width: 16px;
+    height: 68px;
+	background-size: 32px;
+}
+.slideone-copy:after { 
+    background-position: -16px 0;
+}
+.slideone-h2 {
+	font-family: 'Arial Narrow', Arial, Heveltica, sans-serif;
+	color: #333333;
+	font-size: 22px;
+	line-height: 22px;
+	width: 180px;
+	margin: 0 auto 10px auto;
+	left:300px
+	
+}
+.slideone-copy {
+	
+	margin-left: -100px;
+	width: 210px;
+	margin-top: -50px;
+}
+#slideone .cta-slideone {
+	bottom: 35px;
+	left: 50%;
+	margin-left: -70px;
+	display: block;
+	width: 140px;
+	height: 32px;
+	line-height: 32px;
+	font-size: 11px;
+}
+}
+@media (max-width: 767px) and (min-width: 481px) {
+
+.slideone {
+	height: 398px;
+}
+
+ .img-responsive{
+	height: 100%;
+	
+}
+
+.slideone-h2 {
+	font-family: 'Arial Narrow', Arial, Heveltica, sans-serif;
+	color: #333333;
+	font-size: 35px;
+	line-height: 35px;
+	width: 278px;
+	margin: 10px auto 10px auto;
+	left:300px
+	
+}
+.slideone-copy {
+	margin-left:-170px;
+	width: 350px;
+	
+}
+
+}
+@media (max-width: 991px) and (min-width: 768px) {
+.slideone {
+	height: 398px;
+	max-width:640px;
+	left: 0;
+    margin: 0 auto;
+    position: absolute;
+    right: 0;
+
+}
+#slideone {
+	background-size: 515px;
+}
+.slideone-h2 {
+	font-family: 'Arial Narrow', Arial, Heveltica, sans-serif;
+	color: #333333;
+	font-size: 35px;
+	line-height: 35px;
+	width: 278px;
+	margin: 10px auto 10px auto;
+	left:300px
+	
+}
+.slideone-copy {
+	margin-left:-180px;
+	width: 350px;
+	
+}
+}
+@media (min-width: 992px) {
+  .slideone {
+	height: 598px;
+	max-width:960px;
+	left: 0;
+    margin: 0 auto;
+    position: absolute;
+    right: 0;
+  }
+   .img-responsive{
+	height: 100%;
+	max-width:958px;
+}
+}

@@ -1,0 +1,54 @@
+<!-- Carousel
+    ================================================== -->      
+    <div id="myCarousel" class="carousel slide">
+    
+     <!-- carousel repeaters -->
+     <div rn-carousel rn-carousel-index="slideIndex" fullscreen="isFullScreen" only-watched-property>        
+          <div ng-repeat="slide in slides">
+              <div class="item">
+                <div class="container" ng-include src="'partials/'+slide.templateID+''"></div>
+              </div>
+          </div>
+     </div><!-- /carousel repeaters -->
+
+     <!-- carousel controllers -->
+     <a class="left carousel-control"  ng-click="prev()"></a>
+     <a class="right carousel-control" ng-click="next()"></a>
+     <!-- /carousel controllers -->
+
+   </div><!-- /Carousel -->
+
+   <!-- Slide Templates -->
+   <script src="slide1.html" type="text/ng-template"></script>   
+   <div slide1></div>
+   
+   <script src="slide2.html" type="text/ng-template"></script> 
+   <div slide2></div>  
+   
+   <script src="slide3.html" type="text/ng-template"></script>  
+   <div slide3></div> 
+   
+   <script src="slide4.html" type="text/ng-template"></script>
+   <div slide4></div>
+   
+   <script src="slide5.html" type="text/ng-template"></script>  
+   <div slide5></div> 
+   <!-- /Slide Templates -->
+
+   
+   <!-- carousel indicators -->
+   <div class="thumbs">
+      <div class="thumb" ng-repeat="slide in slides" ng-click="$parent.slideIndex=$index" ng-class="{'is-active': ($parent.slideIndex==$index)}"></div>
+   </div><!-- /carousel indicators -->
+    
+  
+  <!-- carousel slide counter/ page zoom button -->
+  <div class="controls ng-cloak">
+      <ul class="nav-pills pull-right slide-zoom hidden-xs">
+        <li><div class="slide-num">{{ slideIndex + 1 }}/{{ slides.length }}</div></li>
+        <li><a ng-click="goFullScreenViaWatcher()" class="zoom" id="fsButton"></a></li>
+      </ul>
+  </div><!-- /carousel slide counter/ page zoom button -->
+  
+
+   

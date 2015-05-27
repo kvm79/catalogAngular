@@ -1,0 +1,13 @@
+<accordion close-others="true" addCarouselWidth>
+  <accordion-group ng-repeat="group in groups" is-open="group.open">
+      <accordion-heading>
+          <a ng-class="{'collapse':groups[$index].open, 'collapse in':!groups[$index].open }"><img ng-src="{{group.imgS | trusted}}" class="accordion_img_sm" /></a>
+      </accordion-heading>               
+          <img ng-src="{{group.imgL | trusted}}" class="accordion_img_lg" />
+          <div class="accordion-itemName">
+              {{group.headline}}
+          </div>
+          <br clear="all" />
+          <a href="{{group.url}}" class="accordion-itemLink"><span class="glyphicon glyphicon-play small"></span> {{group.textLink}}</a>
+  </accordion-group>
+</accordion>

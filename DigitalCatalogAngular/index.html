@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<!--[if IE 8]>
+<html class="no-js lt-ie9" xmlns:ng="http://angularjs.org" id="ng-app" ng-app="carouselApp"> 
+<![endif]-->
+<!--[if gt IE 8]><!--> 
+<html class="no-js" ng-app="carouselApp"> 
+<!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <!--[if IE 8]><!--> <meta http-equiv="X-UA-Compatible" content="IE=8" /> <!--<![endif]-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>JAXON'S</title>
+    <link rel="shortcut icon" href="../../assets/ico/favicon.ico">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/starter-template.css" rel="stylesheet">
+    <link href="css/angular-carousel.css" rel="stylesheet">
+    <link href="css/accordion.css" rel="stylesheet" type="text/css">
+    <link href="css/tooltip.css" rel="stylesheet">
+    <link href="css/slideone.css" rel="stylesheet">
+    <link href="css/video-js.css" rel="stylesheet" type="text/css">
+    <link href="css/scrollup.css" rel="stylesheet" type="text/css">
+    
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+            
+    <!--[if lte IE 8]>
+    <script>
+      document.createElement('accordion');
+      document.createElement('accordion-group');
+      document.createElement('accordion-heading');
+      document.createElement('ng-include');
+      document.createElement('ng-pluralize');
+      document.createElement('ng-view');
+      document.createElement('ng:include');
+      document.createElement('ng:pluralize');
+      document.createElement('ng:view');
+    </script>
+    <![endif]-->
+    
+    <!--[if lte IE 8]>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/es5-shim/4.0.0/es5-shim.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/json3/3.3.2/json3.min.js"></script>
+    <![endif]-->
+        
+    <!-- video.js must be in the <head> for older IEs to work. -->
+ 	<script src="../../dist/js/video.js"></script>
+    <script>videojs.options.flash.swf = "video-js.swf";</script>
+</head>
+<body ng-controller='CarouselListCtrl'>
+<div class="container">
+  <!-- Header Navigation
+    ================================================== -->
+  <h1 class="masthead"><a href="#home"><img src="images/logo-jaxons.gif" alt="JAXON'S" /></a></h1>
+   <div class="header">    
+      <ul class="nav-pills pull-right visible-md social-icons">
+        <li><a href="#" class="facebook"></a></li>
+        <li><a href="#" class="twitter"></a></li>
+        <li><a href="#" class="pinterest"></a></li>
+      </ul>
+      <ul class="nav nav-pills">
+        <li ng-class="{ active: isCurrentPath('/clothing') }"><a href="#clothing">Clothing</a></li>
+        <li ng-class="{ active: isCurrentPath('/shoes') }"><a href="#shoes">Shoes</a></li>
+        <li ng-class="{ active: isCurrentPath('/accessories') }"><a href="#accessories">Accessories</a></li>
+        <li class="hidden-xs" ng-class="{ active: isCurrentPath('/house') }"><a href="#house">House &amp; Home</a></li>
+        <li class="hidden-xs" ng-class="{ active: isCurrentPath('/sale') }"><a href="#sale">Sale</a></li>
+        <li class="hidden-xs" ng-class="{ active: isCurrentPath('/blog') }"><a href="#blog">Blog</a></li>
+      </ul>
+   </div><!-- /Header Navigation -->
+   
+   <!-- Template Views -->
+   <div ng-view></div>
+   <!-- /Template Views -->
+        
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script src="js/custom.js"></script>
+<script src="js/requestAnimationFrame.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.9/angular.min.js"></script>
+<script src="js/ui-bootstrap-tpls-0.11.0.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.9/angular-route.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.1/angular-sanitize.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.9/angular-touch.min.js"></script>
+<script src="src/angular-carousel.js"></script>
+<!--<script src="src/angular-carousel.js"></script>
+    <script src="src/directives/ngController.js"></script>
+    <script src="src/directives/rn-carousel.js"></script>
+    <script src="src/directives/rn-carousel-indicators.js"></script>
+    <script src="src/directives/sliceFilter.js"></script>-->
+<script src="src/directives/ngController.js"></script>
+<script src="js/fullscreen.js"></script>
+<script src="js/directives.js"></script>
+<script src="src/controllers.js"></script>
+<script src="js/tooltip.js"></script>
+</body>
+</html>
